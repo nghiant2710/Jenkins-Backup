@@ -6,8 +6,8 @@ GIT_REPO=$1
 GIT_ACCOUNT=$2
 GIT_PASSWORD=$3
 REPO_NAME=$(basename "$GIT_REPO" ".${GIT_REPO##*.}")
-BACKUP_FILE="jenkinsconfig_$REPO_NAME-backup.xml"
-BACKUP_FILE_RAW="jenkinsconfig_$REPO_NAME-backup-RAW.xml"
+BACKUP_FILE="Jenkins_Config_$REPO_NAME-backup.xml"
+BACKUP_FILE_RAW="Jenkins_Config_$REPO_NAME-backup-RAW.xml"
 # Time format YYYY-MM-DD
 COMMIT_MESSAGE="Build Configuration Backup for $REPO_NAME $(date +'%F')"
 
